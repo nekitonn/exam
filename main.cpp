@@ -11,8 +11,14 @@ int main() {
     int count_e = 0;
     int count_er = 0;
     for (int i = 0; Input[i] != '\0'; i++)
-        if (Input[i] == 'a'){
-            if (Input[i + 1] != 'b')
+        if (Input[i] == 'e'){
+            if (Input[i + 1] != 'r')
                 count_er++;
         }
+    for (int i = 0; Input[i] != '\0'; i++)
+        if (Input[i] == 'e') count_e++;
+
+    cout <<"Number of a without r: " <<count_er <<endl;
+    cout <<"Number of e: " << count_e;
+    return 0;
 }
